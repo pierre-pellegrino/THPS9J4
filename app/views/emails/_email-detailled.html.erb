@@ -1,2 +1,7 @@
 <p> <span class='bold'> Objet : </span> <%= email.object %> </p>
 <p> <span class='bold'> Corps : </span> <%= email.body %> </p>
+
+<div class="display-section__right__buttons">
+  <%= link_to "Supprimer", email_path, method: "delete", class: "btn", remote: true %>
+  <%= link_to "Marquer comme non-lu", root_path, class: "btn" %>
+</div>

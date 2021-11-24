@@ -1,1 +1,1 @@
-<%= link_to(raw("<p> <span class='bold'> Objet : </span> #{email.object} </p>"), email_path(email.id), remote: true ) %>
+<%= link_to(raw("<p class='mail-#{email.id}'> <span class='bold'> Objet : </span> #{email.object} </p>"), email_path(email.id), remote: true ) %>
