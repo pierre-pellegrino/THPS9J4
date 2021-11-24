@@ -10,7 +10,19 @@ body {
 .display-section {
   display: flex;
   justify-content: center;
-  min-height: 100vh;
+  overflow-y: hidden;
+  height: calc(100vh - 61px);
+}
+
+.display-section__right {
+  border-left: 1px solid rgba(0,0,0,0.2);
+  height: calc(100vh - 61px);
+  overflow-y: auto;
+}
+
+.display-section__left {
+  height: calc(100vh - 61px);
+  overflow-y: auto;
 }
 
 .display-section__left, .display-section__right {
@@ -35,10 +47,6 @@ body {
   border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
-.display-section__left {
-  border-right: 1px solid black;
-}
-
 .read-tag {
   border: 1px solid rgba(130,255,130,0.8);
   background-color: rgba(130,255,130,0.2);
@@ -50,6 +58,11 @@ body {
   font-size: 0.8em;
   padding: 2px 4px;
   margin-left: 48px;
+  transition: background-color 0.3s, border 0.3s;
+  -webkit-transition: background-color 0.3s, border 0.3s;
+  -moz-transition: background-color 0.3s, border 0.3s;
+  -ms-transition: background-color 0.3s, border 0.3s;
+  -o-transition: background-color 0.3s, border 0.3s;
 }
 
 .read-tag.not {

@@ -62,3 +62,14 @@ h2 {
   background-color: #000;
   color: #fff;
 }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #9DFD38;
+}
+::-webkit-scrollbar-thumb {
+  background: #686969;
+}
