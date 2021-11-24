@@ -22,6 +22,7 @@ body {
 
 .display-section__left p:hover {
   font-weight: 700;
+  background-color: #f1f1f1;
 }
 
 .display-section__left p:last-of-type {
@@ -30,4 +31,22 @@ body {
 
 .display-section__left {
   border-right: 1px solid black;
+}
+
+.read-tag {
+  border: 1px solid rgba(130,255,130,0.8);
+  background-color: rgba(130,255,130,0.2);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 0.8em;
+  padding: 2px 4px;
+  margin-left: 48px;
+}
+
+.read-tag.not {
+  border: 1px solid rgba(255,150,150,0.8);
+  background-color: rgba(255,150,150,0.2);
 }

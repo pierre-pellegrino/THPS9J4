@@ -1,1 +1,23 @@
-<%= link_to(raw("<p class='mail-#{email.id}'> <span class='bold'> Objet : </span> #{email.object} </p>"), email_path(email.id), remote: true ) %>
+<% if email.read %>
+  <%= link_to(raw("<p class='mail-#{email.id}'> 
+                    <span class='bold'> 
+                      Objet : 
+                    </span> 
+                    #{email.object} 
+                    <span class='read-tag'>
+                      Lu
+                    </span>
+                  </p>"),
+               email_path(email.id), remote: true, class: "mail-wrapper" ) %>
+<% else %>
+  <%= link_to(raw("<p class='mail-#{email.id} bold'> 
+                    <span class='bold'> 
+                      Objet : 
+                    </span> 
+                    #{email.object} 
+                    <span class='not read-tag'>
+                      Non-lu
+                    </span>
+                  </p>"),
+               email_path(email.id), remote: true, class: "mail-wrapper" ) %>
+<% end %>
