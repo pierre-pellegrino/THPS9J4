@@ -1,2 +1,6 @@
+// On supprime l'affichage du mail effacé
 document.querySelector(".display-section__right__mail").innerText = "";
 document.querySelector(".mail-<%=@email.id%>").remove();
+
+// On va masquer la div qui montre l'email détaillé, LA CLASSE.
+document.querySelector(".display-section__right").classList.add("hidden");

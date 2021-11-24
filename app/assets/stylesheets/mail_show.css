@@ -2,6 +2,11 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Pour avoir toujours la div de droite, commenter la classe ci-dessous */
+.hidden {
+  display: none;
+}
+
 .display-section {
   display: flex;
   justify-content: center;
@@ -21,11 +26,12 @@ body {
 }
 
 .display-section__left p:hover {
-  /* font-weight: 700; */
   background-color: #f1f1f1;
+  border: 1px solid rgba(0,0,0,0.2);
+  box-shadow: 0 0 4px 1px rgba(0,0,0,0.2);
 }
 
-.display-section__left p:last-of-type {
+.mail-wrapper:last-of-type p {
   border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 

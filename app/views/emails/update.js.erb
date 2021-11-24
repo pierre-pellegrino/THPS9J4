@@ -6,3 +6,6 @@ document.querySelector(".mail-<%= @email.id %>").classList.add("bold");
 // On masque le bouton "Marquer comme non-lu" quand on a cliqué dessus
 // (Oui c'est clairement parce que j'ai la flemme de modifier le texte et l'effet du bouton, malinx le lynx)
 document.querySelector(".display-section__right__buttons").childNodes[3].style.display = "none";
+
+// En fait on va carrément masquer la div qui montre l'email détaillé, LA CLASSE.
+document.querySelector(".display-section__right").classList.add("hidden");

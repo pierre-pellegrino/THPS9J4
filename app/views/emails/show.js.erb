@@ -5,4 +5,5 @@ document.querySelector(".mail-<%= @email.id %> .read-tag").innerText = "Lu";
 document.querySelector(".mail-<%= @email.id %>").classList.remove("bold");
 
 // On affiche son détail sur la partie droite de l'écran
+document.querySelector(".display-section__right").classList.remove("hidden");
 document.querySelector(".display-section__right__mail").innerHTML = "<%= j render 'email-detailled', email: @email %>";
