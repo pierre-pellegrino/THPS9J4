@@ -1,0 +1,21 @@
+<div class="display-section">
+  <div class="display-section__left">
+
+    <h2> Liste des emails </h2>
+    <%= link_to "Recevoir un email", emails_path, method: "post", class: "btn", remote: true %>
+    <div class="display-section__left__list">
+      <% @emails.each do |email| %>
+        <%= render 'email', email: email %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="display-section__right">
+    <h2> Email sélectionné </h2>
+    <div class="display-section__right__mail">
+      
+    </div>
+
+  </div>
+
+</div>

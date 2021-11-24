@@ -1,0 +1,33 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.display-section {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.display-section__left, .display-section__right {
+  width: 100%;
+  text-align: center;
+}
+
+.display-section__left p {
+  text-align: left;
+  padding: 12px;
+  border-top: 1px solid rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.display-section__left p:hover {
+  font-weight: 700;
+}
+
+.display-section__left p:last-of-type {
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.display-section__left {
+  border-right: 1px solid black;
+}
