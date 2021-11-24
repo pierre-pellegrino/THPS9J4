@@ -1,0 +1,8 @@
+// Au clic sur le bouton "Marquer comme non-lu", on le passe en "non-lu" et on modifie son apparence
+document.querySelector(".mail-<%= @email.id %> .read-tag").classList.add("not");
+document.querySelector(".mail-<%= @email.id %> .read-tag").innerText = "Non-lu";
+document.querySelector(".mail-<%= @email.id %>").classList.add("bold");
+
+// On masque le bouton "Marquer comme non-lu" quand on a cliqué dessus
+// (Oui c'est clairement parce que j'ai la flemme de modifier le texte et l'effet du bouton, malinx le lynx)
+document.querySelector(".display-section__right__buttons").childNodes[3].style.display = "none";

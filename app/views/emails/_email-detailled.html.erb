@@ -3,5 +3,5 @@
 
 <div class="display-section__right__buttons">
   <%= link_to "Supprimer", email_path, method: "delete", class: "btn", remote: true %>
-  <%= link_to "Marquer comme non-lu", root_path, class: "btn" %>
+  <%= link_to "Marquer comme non-lu", email_path, method: "put", class: "btn", remote: true %>
 </div>
