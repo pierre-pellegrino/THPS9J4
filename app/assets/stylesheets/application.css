@@ -69,10 +69,12 @@ h2 {
   color: #32A8FD;
   border-color: white;
   box-shadow: 0 0 6px 3px rgba(255,255,255,0.4);
+  
 }
 
 .btn-menu:hover {
   background-color: #32A8FD;
+  
 }
 
 /* Scrollbar */
