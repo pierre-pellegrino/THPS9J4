@@ -12,6 +12,7 @@ class EmailsController < ApplicationController
   end
 
   def create
+    Faker::Config.locale = "fr"
     @email = Email.create(object: Faker::Games::Pokemon.name, body: Faker::Games::Pokemon.location)
 
     respond_to do |format|

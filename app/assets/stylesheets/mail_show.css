@@ -71,6 +71,27 @@ body {
   overflow-y: hidden;
 }
 
+.display-section__right__mail {
+  padding: 12px;
+  margin: 16px;
+  border: 1px solid rgba(50,168,253,0.4);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.display-section__right__mail .email-part {
+  margin-bottom: 24px;
+}
+
+.email-part.head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+}
+
 .read-tag {
   border: 1px solid rgba(130,255,130,0.8);
   background-color: rgba(130,255,130,0.2);

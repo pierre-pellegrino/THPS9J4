@@ -1,5 +1,20 @@
-<p> <span class='bold'> Objet : </span> <%= email.object %> </p>
-<p> <span class='bold'> Corps : </span> <%= email.body %> </p>
+<div class="email-part head">
+  <p> <span class="bold"><%= mailerName = Faker::Name.name %></span> < monmail@mail.com > </p>
+  <p> <%=email.created_at.day%>.<%=email.created_at.month%>.<%=email.created_at.year%> <%=format('%02d', email.created_at.hour)%>:<%=format('%02d', email.created_at.min)%> </p>
+</div>
+
+<p class="email-part"> <span class='bold'> Objet : </span> <%= email.object %> </p>
+<p class="email-part"> 
+  <span class='bold'> Corps : </span> 
+  Bonjour, <br> 
+  <%= rand(0..1) == 1 ? "J'aime" : "J'adore" %> la ville de <%= email.body %>, c'est elle qui m'a permis de trouver mon
+  <%= email.object %>. J'essaie de trouver des phrases qui changent du Lorem, c'est pénible à force. En plus je parle pas latin. <br><br>
+  <%= rand(0..1) == 1 ? "J'aime les shorts, ça garde mes genoux bien au frais." : "Si je porte un bikini, où est-ce que je mets mes Pokéballs ? Héhé... C'est un secret de femme !" %> <br>
+  (J'y suis pour rien, c'est vraiment une phrase du jeu) <br><br>
+  <%= rand(0..1) == 1 ? "Amicalement," : "Bien à vous," %> <br>
+  <%= mailerName %>
+  
+</p>
 
 <div class="display-section__right__buttons">
   <%= link_to "Supprimer", email_path, method: "delete", class: "btn", remote: true %>

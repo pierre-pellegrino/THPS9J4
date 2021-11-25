@@ -8,7 +8,7 @@
                       Lu
                     </span>
                     <span class='creation_date'>
-                      Reçu le #{email.created_at.day}.#{email.created_at.month}.#{email.created_at.year} à #{email.created_at.hour}h#{email.created_at.min}
+                      Reçu le #{email.created_at.day}.#{email.created_at.month}.#{email.created_at.year} à #{email.created_at.hour}h#{format('%02d', email.created_at.min)}
                     </span>
                   </p>"),
                email_path(email.id), remote: true, class: "mail-wrapper" ) %>
@@ -22,7 +22,7 @@
                       Non-lu
                     </span>
                     <span class='creation_date'>
-                      Reçu le #{email.created_at.day}.#{email.created_at.month}.#{email.created_at.year} à #{email.created_at.hour}h#{email.created_at.min}
+                      Reçu le #{email.created_at.day}.#{email.created_at.month}.#{email.created_at.year} à #{email.created_at.hour}h#{format('%02d', email.created_at.min)}
                     </span>
                   </p>"),
                email_path(email.id), remote: true, class: "mail-wrapper" ) %>
