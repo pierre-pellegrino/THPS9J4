@@ -2,7 +2,7 @@
   <div class="display-section__left">
 
     <h2> Boîte de réception </h2>
-    <%= link_to "Recevoir un email", emails_path, method: "post", class: "btn", remote: true %>
+    <%= link_to "Recevoir un email", emails_path, method: "post", class: "btn btn-menu", remote: true %>
     <div class="display-section__left__list">
       <% @emails.order("created_at DESC").each do |email| %>
         <%= render 'email', email: email %>
