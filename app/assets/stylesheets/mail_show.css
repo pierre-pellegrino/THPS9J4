@@ -71,7 +71,7 @@ body {
   overflow-y: hidden;
 }
 
-.mail-wrapper {
+.mail-wrapper p{
   position: relative;
 }
 
