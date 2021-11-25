@@ -71,6 +71,10 @@ body {
   overflow-y: hidden;
 }
 
+.mail-wrapper {
+  position: relative;
+}
+
 .display-section__right__mail {
   padding: 12px;
   margin: 16px;

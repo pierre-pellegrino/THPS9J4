@@ -1,5 +1,5 @@
 <div class="email-part head">
-  <p> <span class="bold"><%= mailerName = Faker::Name.name %></span> < monmail@mail.com > </p>
+  <p> <span class="bold"><%= mailerName = Faker::Name.name %></span> < <%= mailerName.gsub(/\s+/, "").downcase %>@mail.com > </p>
   <p> <%=email.created_at.day%>.<%=email.created_at.month%>.<%=email.created_at.year%> <%=format('%02d', email.created_at.hour)%>:<%=format('%02d', email.created_at.min)%> </p>
 </div>
 
