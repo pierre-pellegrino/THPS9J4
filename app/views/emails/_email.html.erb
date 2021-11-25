@@ -7,6 +7,9 @@
                     <span class='read-tag'>
                       Lu
                     </span>
+                    <span class='creation_date'>
+                      Reçu le #{email.created_at.day}.#{email.created_at.month}.#{email.created_at.year} à #{email.created_at.hour}h#{email.created_at.min}
+                    </span>
                   </p>"),
                email_path(email.id), remote: true, class: "mail-wrapper" ) %>
 <% else %>
@@ -17,6 +20,9 @@
                     #{email.object} 
                     <span class='not read-tag'>
                       Non-lu
+                    </span>
+                    <span class='creation_date'>
+                      Reçu le #{email.created_at.day}.#{email.created_at.month}.#{email.created_at.year} à #{email.created_at.hour}h#{email.created_at.min}
                     </span>
                   </p>"),
                email_path(email.id), remote: true, class: "mail-wrapper" ) %>
