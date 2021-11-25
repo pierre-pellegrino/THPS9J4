@@ -2,7 +2,7 @@
   padding: 16px;
   display: flex;
   align-items: center;
-  background-color: #686969;
+  background-color: #32A8FD;
   justify-content: space-between;
   box-shadow: 0 1px 8px 2px rgba(0,0,0,0.3);
 }
@@ -20,7 +20,7 @@
 }
 
 .navbar p {
-  color: #9DFD38;
+  color: #fff;
   cursor: default;
   margin: 0 12px;
 }
@@ -35,12 +35,12 @@
 }
 
 .navbar__right p:hover, .nav-icon:hover {
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 
 .nav-icon {
-  color: #9DFD38;
+  color: #fff;
   font-size: 1.2em;
   margin: 0 12px;
 }

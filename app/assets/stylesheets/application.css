@@ -27,6 +27,7 @@
 
 h2 {
   margin: 18px 0;
+  color: white;
 }
 
 .bold {
@@ -68,8 +69,8 @@ h2 {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #9DFD38;
+  background: #32A8FD;
 }
 ::-webkit-scrollbar-thumb {
-  background: #686969;
+  background: #fff;
 }

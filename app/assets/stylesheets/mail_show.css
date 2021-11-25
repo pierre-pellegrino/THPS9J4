@@ -12,17 +12,31 @@ body {
   justify-content: center;
   overflow-y: hidden;
   height: calc(100vh - 61px);
+  background: linear-gradient(0deg, rgba(63,94,251,1) 20%, rgba(50,168,253,1) 100%);
 }
 
 .display-section__right {
   border-left: 1px solid rgba(0,0,0,0.2);
   height: calc(100vh - 61px);
   overflow-y: auto;
+  background-color: white;
+  margin: 0 16px;
+  border-radius: 8px 0 0 0;
+  -webkit-border-radius: 8px 0 0 0;
+  -moz-border-radius: 8px 0 0 0;
+  -ms-border-radius: 8px 0 0 0;
+  -o-border-radius: 8px 0 0 0;
+}
+
+.display-section__right h2 {
+  color: black;
 }
 
 .display-section__left {
   height: calc(100vh - 61px);
   overflow-y: auto;
+  padding: 0 16px;
+  background: linear-gradient(0deg, rgba(63,94,251,1) 20%, rgba(50,168,253,1) 100%);
 }
 
 .display-section__left, .display-section__right {
@@ -35,6 +49,7 @@ body {
   padding: 12px;
   border-top: 1px solid rgba(0,0,0,0.2);
   cursor: pointer;
+  background-color: #fff;
 }
 
 .display-section__left p:hover {
@@ -45,6 +60,15 @@ body {
 
 .mail-wrapper:last-of-type p {
   border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.display-section__left__list {
+  border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  -ms-border-radius: 4px 4px 0 0;
+  -o-border-radius: 4px 4px 0 0;
+  overflow-y: hidden;
 }
 
 .read-tag {
